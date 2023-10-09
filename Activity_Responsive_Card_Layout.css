@@ -1,0 +1,97 @@
+/*CSS style*/
+
+/* Global Styles */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* Body Styles */
+body {
+    background-image: url('onepiece.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+/* Container Styles */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    position: relative;
+}
+/* Card Styles */
+.card {
+    background: white;
+    width: 350px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px black;
+}
+/* Card Image Styles */
+.card-image {
+    height: 500px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+/* Individual Card Image Styles */
+.card-1{
+    background-image: url('https://unicorncards.co.uk/images/thumbs/0061614_600.webp');
+}
+.card-2{
+    background-image: url('https://unicorncards.co.uk/images/thumbs/0064927_600.webp');
+}
+.card-3{
+    background-image: url('https://unicorncards.co.uk/images/thumbs/0071974_600.webp');
+}
+/* Heading Styles */
+.card h2 {
+    padding: 10px;
+    text-align: center;
+    font-family: "Rye";
+  
+
+    
+}
+/* Text Description Styles */
+.card-text {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.card p {
+    padding: 10px;
+    text-align: justify;
+    font-family: "Londrina Solid";
+  
+
+}
+/* Link Styles */
+.card a {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+}
+/* Hover Styles */
+.card:hover {
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+    justify-content: center;
+}
+.card:hover .card-text {
+    display: block;
+    opacity: 1;
+}
+
+
